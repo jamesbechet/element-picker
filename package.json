@@ -1,0 +1,40 @@
+{
+  "name": "element-picker",
+  "description": "A JavaScript library that allows you to point and click to get the hovered element.",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "author": {
+    "name": "James Bechet",
+    "email": "jamesbechet@gmail.com",
+    "url": "http://jamesbechet.com/"
+  },
+  "bugs": {
+    "url": "https://github.com/jamesbechet/element-picker/issues"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "jest": "21.2.1"
+  },
+  "keywords": [
+    "click element",
+    "dom element",
+    "element picker",
+    "element selector",
+    "get clicked element",
+    "get dom element",
+    "get element",
+    "get hovered element",
+    "hover dom element",
+    "hover element",
+    "pick dom element",
+    "pick element"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/jamesbechet/element-picker.git"
+  },
+  "scripts": {
+    "test": "jest"
+  }
+}
