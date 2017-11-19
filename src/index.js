@@ -75,7 +75,7 @@
       console.error('onClick option needs to be specified.');
       return;
     }
-    desiredBackgroundColor = options.backgroundColor
+    desiredBackgroundColor = options.backgroundColor || desiredBackgroundColor
     onClick = options.onClick;
     document.addEventListener('click', onMouseClick, false);
     document.addEventListener('mousemove', onMouseMove, false);
