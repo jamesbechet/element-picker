@@ -23,6 +23,7 @@
   }
 
   var oldTarget;
+  var desiredBackgroundColor = 'rgba(0, 0, 0, 0.1)';
   var oldBackgroundColor;
   var onClick;
 
@@ -38,7 +39,7 @@
     }
     oldTarget = target;
     oldBackgroundColor = target.style.backgroundColor;
-    target.style.backgroundColor = 'rgba(0, 0, 0, 0.1)';
+    target.style.backgroundColor = desiredBackgroundColor;
 
   }
 
@@ -53,6 +54,7 @@
 
   function reset() {
 
+    document.removeEventListener('click', onMouseClick, false);
     document.removeEventListener('mousemove', onMouseMove, false);
     document.body.style.cursor = 'auto';
     if (oldTarget) {
@@ -73,6 +75,7 @@
       console.error('onClick option needs to be specified.');
       return;
     }
+    desiredBackgroundColor = options.backgroundColor
     onClick = options.onClick;
     document.addEventListener('click', onMouseClick, false);
     document.addEventListener('mousemove', onMouseMove, false);
