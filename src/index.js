@@ -46,6 +46,8 @@
   function onMouseClick(event) {
 
     event      = event || window.event;
+    event.preventDefault();
+    event.stopPropagation();
     var target = event.target || event.srcElement;
     onClick(target);
     reset();
