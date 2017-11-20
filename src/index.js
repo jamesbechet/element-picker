@@ -95,7 +95,7 @@
    * @type {Object}
    */
   var elementPicker     = {};
-  elementPicker.version = '1.0.0';
+  elementPicker.version = '1.0.1';
   elementPicker.init    = init;
 
   return elementPicker;

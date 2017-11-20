@@ -27,6 +27,9 @@ function onClick(element) {
 elementPicker.init({ onClick })
 ```
 
-### License
+### Options
+#### `backgroundColor` `{String}` `optional` `default='rgba(0, 0, 0, 0.1)'`
+The background color used when an element is being hovered.
 
+### License
 MIT. Copyright (C) [James Bechet](http://jamesbechet.com).
