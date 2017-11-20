@@ -46,11 +46,12 @@
   function onMouseClick(event) {
 
     event      = event || window.event;
-    event.preventDefault();
-    event.stopPropagation();
     var target = event.target || event.srcElement;
+    if (event.preventDefault) event.preventDefault();
+    if (event.stopPropagation) event.stopPropagation();
     onClick(target);
     reset();
+    return false
 
   }
 
