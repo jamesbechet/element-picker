@@ -1,7 +1,7 @@
 {
   "name": "element-picker",
   "description": "A JavaScript library that allows you to point and click to get the hovered element.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "src/index.js",
   "author": {
     "name": "James Bechet",
