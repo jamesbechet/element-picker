@@ -1,4 +1,6 @@
-# Element Picker [![travis][travis-image]][travis-url] [![npm][npm-image]][npm-url] [![downloads][downloads-image]][downloads-url]
+# Element Picker – JavaScript HTML Element Picker Library
+
+[![travis][travis-image]][travis-url] [![npm][npm-image]][npm-url] [![downloads][downloads-image]][downloads-url]
 
 [travis-image]: https://img.shields.io/travis/jamesbechet/element-picker/master.svg
 [travis-url]: https://travis-ci.org/jamesbechet/element-picker
@@ -7,15 +9,37 @@
 [downloads-image]: https://img.shields.io/npm/dm/element-picker.svg
 [downloads-url]: https://npmjs.org/package/element-picker
 
-## A JavaScript library to help you point and click to get the hovered element.
+A lightweight JavaScript element picker library that lets developers visually select, inspect, and retrieve any hovered HTML element on a web page using point-and-click interaction. Ideal for building developer tools, browser extensions, page builders, QA tools, visual editors, and debugging utilities.
 
-### Install
+## What is Element Picker?
 
-```bash
-npm install --save element-picker
-```
+Element Picker is a vanilla JavaScript utility that allows users to hover over elements on a page, visually highlight them, and select a target element via mouse click. Once selected, the library returns the underlying DOM element for inspection or further processing.
 
-### Usage
+Common use cases include:
+- HTML element inspection tools
+- No-code and low-code editors
+- Web page builders
+- Visual QA and testing tools
+- Browser extensions
+- Debugging and developer utilities
+
+## How This Element Picker Differs From Browser DevTools and uBlock
+
+Unlike browser developer tools or ad-blocker element pickers, this library is designed to be embedded directly into your own web applications.
+
+- No browser extension required
+- Works inside any JavaScript application
+- Fully customizable hover styles
+- Returns raw DOM elements for programmatic use
+- Suitable for production tools, not just inspection
+
+## Install
+
+`npm install --save element-picker`
+
+## Usage – Pick and Retrieve Any HTML Element
+
+The element picker initializes a hover listener on the page. When the user clicks an element, the selected DOM node is returned via the onClick callback.
 
 ```js
 var elementPicker = require('element-picker')
@@ -31,5 +55,10 @@ elementPicker.init({ onClick })
 #### `backgroundColor` `{String}` `optional` `default='rgba(0, 0, 0, 0.1)'`
 The background color used when an element is being hovered.
 
-### License
-MIT. Copyright (C) [James Bechet](http://jamesbechet.com).
+## Keywords
+
+JavaScript element picker, HTML element picker, DOM picker, hover element selector, visual element selector, JavaScript DOM inspector, UI element picker, page element selector
+
+## License
+
+MIT. Copyright (C) James Bechet (https://jamesbechet.github.io/jamesbechet/).
