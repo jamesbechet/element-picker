@@ -7,17 +7,20 @@
 
 (function elementPickerModule(factory) {
 
+  /* istanbul ignore next */
   if (typeof define === 'function' && define.amd) {
     define(factory);
   }
   else if (typeof module != 'undefined' && typeof module.exports != 'undefined') {
     module.exports = factory();
   }
+  /* istanbul ignore next */
   else {
     window['elementPicker'] = factory();
   }
 })(function elementPickerFactory() {
 
+  /* istanbul ignore next */
   if (typeof window === 'undefined' || !window.document) {
     console.error('elementPicker requires the window and document.');
   }

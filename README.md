@@ -1,6 +1,7 @@
 # Element Picker – JavaScript HTML Element Picker Library
 
 ![CI](https://github.com/jamesbechet/element-picker/actions/workflows/ci.yml/badge.svg)
+[![codecov](https://codecov.io/gh/jamesbechet/element-picker/branch/master/graph/badge.svg)](https://codecov.io/gh/jamesbechet/element-picker)
 [![npm][npm-image]][npm-url] [![downloads][downloads-image]][downloads-url]
 
 [npm-image]: https://img.shields.io/npm/v/element-picker.svg

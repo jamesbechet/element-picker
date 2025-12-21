@@ -32,9 +32,14 @@
     "visual selector"
   ],
   "devDependencies": {
-    "jest": "^30.2.0"
+    "jest": "^30.2.0",
+    "jest-environment-jsdom": "^30.2.0"
   },
   "scripts": {
-    "test": "jest --passWithNoTests"
+    "test": "jest --passWithNoTests",
+    "test:coverage": "jest --coverage"
+  },
+  "jest": {
+    "testEnvironment": "jsdom"
   }
 }
