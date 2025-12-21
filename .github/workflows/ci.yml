@@ -25,7 +25,7 @@ jobs:
         run: npm ci
 
       - name: Test with coverage
-        run: npm run test:coverage -- --coverageThreshold='{"global":{"branches":100,"functions":100,"lines":100,"statements":100}}' --coverageReporters=json-summary
+        run: npm run test:coverage -- --coverageThreshold='{"global":{"branches":100,"functions":100,"lines":100,"statements":100}}' --coverageReporters=lcov
 
       - name: Upload coverage to Codecov
         uses: codecov/codecov-action@v5
